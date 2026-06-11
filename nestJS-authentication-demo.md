@@ -1,4 +1,4 @@
-#Demo backend using NestJS + JWT + MongoDB/Mongoose + role authorization
+# Demo backend using NestJS + JWT + MongoDB/Mongoose + role authorization
 
 Below is a copy-ready demo backend using NestJS + JWT + MongoDB/Mongoose + role authorization. NestJS officially supports MongoDB through Mongoose schemas/models, JWT authentication through Passport strategies, and role authorization through guards/decorators.
   
