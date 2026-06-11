@@ -1,9 +1,9 @@
-NestJS is a backend framework.
+# NestJS is a backend framework.
 
 It is similar to Spring Boot (Java), ASP.NET Core (C#), or Django (Python).
 
-Where NestJS Fits
-
+### Where NestJS Fits
+```tx
 Frontend
    ↓
 React
@@ -23,13 +23,13 @@ PostgreSQL
 MongoDB
 MySQL
 Oracle
-
+```
 ⸻
 
-What NestJS Does
+### What NestJS Does
 
 REST APIs
-
+```ts
 @Controller('customers')
 export class CustomerController {
   @Get()
@@ -37,21 +37,21 @@ export class CustomerController {
     return ['John', 'Mary'];
   }
 }
-
+```
 Request:
 
 GET /customers
 
 Response:
-
+```tx
 ["John", "Mary"]
-
+```
 ⸻
 
-Database Access
+## Database Access
 
 Using TypeORM:
-
+```ts
 @Injectable()
 export class CustomerService {
   constructor(
@@ -62,25 +62,25 @@ export class CustomerService {
     return this.repository.find();
   }
 }
-
+```
 ⸻
 
-Authentication
+## Authentication
 
 JWT Example:
-
+```ts
 @UseGuards(JwtAuthGuard)
 @Get('profile')
 profile() {
   return "Secure Profile";
 }
-
+```
 ⸻
 
-Microservices
+## Microservices
 
 NestJS supports:
-
+```tx
 REST
 GraphQL
 Kafka
@@ -88,44 +88,44 @@ RabbitMQ
 Redis
 gRPC
 WebSockets
-
-Example Kafka client:
+```
+### Example Kafka client:
 
 ClientKafka
 
 ⸻
 
-Why Front-End Developers Like NestJS
+### Why Front-End Developers Like NestJS
 
 NestJS was inspired by Angular.
 
 You’ll see familiar concepts:
-
+```tx
 Angular	NestJS
 Modules	Modules
 Services	Services
 Dependency Injection	Dependency Injection
 Decorators	Decorators
 TypeScript	TypeScript
-
+```
 Angular Service:
-
+```ts
 @Injectable()
 export class CustomerService {}
-
+```
 NestJS Service:
-
+```ts
 @Injectable()
 export class CustomerService {}
-
+```
 Very similar.
 
 ⸻
 
-Common Full Stack Architecture
+## Common Full Stack Architecture
 
 A common enterprise architecture looks like:
-
+```tx
 React / Next.js
        ↓
      REST API
@@ -137,10 +137,10 @@ PostgreSQL / MongoDB
 Redis Cache
        ↓
 Kafka Events
-
+```
 ⸻
 
-Interview Answer
+## Interview Answer
 
 If asked:
 
@@ -151,7 +151,7 @@ Answer:
 NestJS is a backend framework built on top of Node.js and TypeScript. It is used to build REST APIs, GraphQL APIs, microservices, authentication systems, and server-side applications. It provides an enterprise architecture similar to Spring Boot, including dependency injection, modules, controllers, services, guards, and middleware. For frontend development, it is commonly paired with React, Angular, Vue, or Next.js.
 
 Quick Comparison
-
+```tx
 Technology	Type
 React	Frontend Library
 Angular	Frontend Framework
@@ -161,7 +161,7 @@ Node.js	Runtime
 NestJS	Backend Framework
 Spring Boot	Backend Framework
 Django	Backend Framework
-
+```
 A useful way to remember it for interviews:
 
 React builds the UI. NestJS builds the APIs.
